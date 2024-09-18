@@ -28,4 +28,6 @@ jobs:
       with:
         gradle-version: "8.10"
     - name: Build with Gradle 8.10
-      run: gradle build
+      run: 
+        export GHIDRA_INSTALL_DIR=/opt/ghidra_11.1.2_PUBLIC
+        gradle build
